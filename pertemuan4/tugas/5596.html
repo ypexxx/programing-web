@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23.11.5596_Yuafiq Alfin_Tugas4</title>
+</head>
+<body>
+    <h1>Tugas 4</h1>
+
+    <script>
+        // 1. Array
+        const soal1 = () => {
+            let array = [1, 2, 3, "halo", false, true];
+            let jawab1 = array.slice(1);
+            console.log("jawaban no.1 :")
+            console.log(jawab1);
+        }
+
+        // 2. Operasi Conditional
+        const soal2 = () => {
+            const cheese = "cheddar";
+            console.log("jawaban no.2 :")
+            if(cheese === "cheddar") {
+                console.log("Yay! Cheese available for making cheese on toast.");
+            } else {
+                console.log("No cheese on toast for you today.");
+            }
+        }
+
+        // 3. Operasi Looping
+        const soal3 = () => {
+            console.log("jawaban no.3 :");
+            const buku = {
+                judul : "Harry potter and the Philosopher's Stone",
+                pengarang: "J. K. Rowling",
+                tahun: 1997
+            };
+
+            for(let key in buku) {
+                let data = buku[key];
+                console.log(`${key} : ${data}`);
+            }
+        }
+
+        // 4. Operasi Try Catch Finally
+        const soal4 = () => {
+            const number = 100;
+            const text = "a";
+
+            console.log("jawaban no.4 :")
+            try {
+                console.log(number / text);
+                console.log(a);
+            } catch (error) {
+                console.log(`Error message : ${error}`);
+            } finally {
+                console.log("Finnaly will execute every time");
+            }
+        }
+
+        soal1();
+        soal2();
+        soal3();
+        soal4();
+    </script>
+</body>
+</html>
